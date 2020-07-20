@@ -26,5 +26,5 @@ jobs:
           git config --global user.name "baradghimire"
           git config --global user.email "baradghimire@gmail.com"
           git add README.md
-          git commit -m "Update README.md `date +'%d/%m/%Y'`";
+          git commit -m "Auto update README.md `date +'%d/%m/%Y'`"
           git push
