@@ -1,10 +1,11 @@
 name: Auto Update README.md
 on:
-  schedule:
-    - cron: "00 00 * * 0"
+  workflow_dispatch:
 jobs:
   build:
     runs-on: ubuntu-latest
+    env:
+      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
     strategy:
       matrix:
         node-version: [12.x]
@@ -16,5 +17,12 @@ jobs:
           node-version: ${{ matrix.node-version }}
       - name: Install Packages
         run: npm i
-      - name: Start
+      - name: Update README.md
         run: npm start
+      - name: Git add, commit, push
+        run: |
+          git config --global user.name "baradghimire"
+          git config --global user.email "baradghimire@gmail.com"
+          git add README.md
+          git commit -m "Update README.md `date +'%d/%m/%Y'`";
+          git push
