@@ -1,4 +1,4 @@
-<img src="https://source.unsplash.com/1920x540/?nature">
+<img src="https://source.unsplash.com/featured/1920x540/?nature/">
 
 # G'day, nerds 👋🏽
 
