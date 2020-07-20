@@ -1,5 +1,3 @@
-<img src="https://source.unsplash.com/featured/1920x540/?nature/">
-
 # G'day, nerds 👋🏽
 
 I'm [Barad](https://www.twitter.com/barad/), a junior developer at [Outcome.Life](https://github.com/OutcomeLife) working on [Project Genny](https://github.com/genny-project).<br>
