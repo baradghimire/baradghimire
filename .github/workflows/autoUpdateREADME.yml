@@ -1,0 +1,28 @@
+name: Auto Update README.md
+on:
+  workflow_dispatch:
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    env:
+      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    strategy:
+      matrix:
+        node-version: [12.x]
+    steps:
+      - uses: actions/checkout@v2
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v1
+        with:
+          node-version: ${{ matrix.node-version }}
+      - name: Install Packages
+        run: npm i
+      - name: Update README.md
+        run: npm start
+      - name: Git add, commit, push
+        run: |
+          git config --global user.name "baradghimire"
+          git config --global user.email "baradghimire@gmail.com"
+          git add README.md
+          git commit -m "Update README.md `date +'%d/%m/%Y'`";
+          git push
