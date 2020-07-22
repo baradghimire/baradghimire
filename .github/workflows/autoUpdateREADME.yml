@@ -2,25 +2,17 @@ name: Auto Update README.md
 on:
   workflow_dispatch:
   schedule:
-    - cron: "00 00 * * 0"
+    - cron: "0 0 * * *"
 jobs:
   build:
     runs-on: ubuntu-latest
     env:
       GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-    strategy:
-      matrix:
-        node-version: [12.x]
+      UNSPLASH_TOKEN: ${{ secrets.UNSPLASH_TOKEN }}
     steps:
       - uses: actions/checkout@v2
-      - name: Use Node.js ${{ matrix.node-version }}
-        uses: actions/setup-node@v1
-        with:
-          node-version: ${{ matrix.node-version }}
-      - name: Install Packages
-        run: npm i
-      - name: Update README.md
-        run: npm start
+      - name: Run Update README.md script
+        run: ./updateREADME.sh $UNSPLASH_TOKEN
       - name: Git add, commit, push
         run: |
           git config --global user.name "baradghimire"
