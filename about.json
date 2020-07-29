@@ -1,0 +1,31 @@
+{
+  "name": "Barad Ghimire",
+  "location": [
+    { "current": "Melbourne, Australia" },
+    { "previous": "Kathmandu, Nepal" }
+  ],
+  "contact": {
+    "email": "baradghimire@gmail.com",
+    "twitter": "https://www.twitter.com/barad",
+    "github": "https://www.github.com/baradghimire",
+    "linkedin": "https://www.linkedin.com/in/baradghimire",
+    "instagram": "https://www.instagram.com/baradghimire",
+    "website": "https://barad.tech/"
+  },
+  "work": {
+    "company": "Outcome.Life",
+    "title": "Junior Developer",
+    "links": {
+      "website": "https://outcome.life",
+      "github": [
+        "https://github.com/OutcomeLife",
+        "https://github.com/genny-project"
+      ]
+    }
+  },
+  "education": {
+    "school": "Deakin University",
+    "degree": "Bachelor of Cyber Security",
+    "website": "https://www.deakin.edu.au/"
+  }
+}
