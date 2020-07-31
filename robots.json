@@ -5,12 +5,12 @@
     { "previous": "Kathmandu, Nepal" }
   ],
   "contact": {
-    "email": "baradghimire@gmail.com",
+    "website": "https://barad.tech",
+    "email": "mailto:baradghimire@gmail.com",
     "twitter": "https://www.twitter.com/barad",
     "github": "https://www.github.com/baradghimire",
     "linkedin": "https://www.linkedin.com/in/baradghimire",
-    "instagram": "https://www.instagram.com/baradghimire",
-    "website": "https://barad.tech/"
+    "instagram": "https://www.instagram.com/baradghimire"
   },
   "work": {
     "company": "Outcome.Life",
@@ -26,6 +26,6 @@
   "education": {
     "school": "Deakin University",
     "degree": "Bachelor of Cyber Security",
-    "website": "https://www.deakin.edu.au/"
+    "website": "https://www.deakin.edu.au"
   }
 }
