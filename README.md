@@ -1,4 +1,4 @@
-<img src="https://images.unsplash.com/photo-1579951019281-ef8916759a7f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjE0OTYxOH0/&fm=jpg&crop=faces&fit=crop&h=540&w=1920"/><sup>Photo by [howardbouchevereau](https://unsplash.com/photos/446qCKeHpLo) on [Unsplash](https://unsplash.com)</sup>
+<img src="https://images.unsplash.com/photo-1577387701116-b79d81ec7a07?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjE0OTYxOH0/&fm=jpg&crop=faces&fit=crop&h=540&w=1920"/><sup>Photo by [ilyuza](https://unsplash.com/photos/1L_nJObIbFA) on [Unsplash](https://unsplash.com)</sup>
 
 # G'day, nerds 👋🏽
 
