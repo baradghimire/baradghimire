@@ -1,4 +1,4 @@
-<img src="https://images.unsplash.com/photo-1562777311-4ce2284ca143?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjE0OTYxOH0/&fm=jpg&crop=faces&fit=crop&h=540&w=1920"/><sup>Photo by [arut05](https://unsplash.com/photos/dIBlEYvFbrU) on [Unsplash](https://unsplash.com)</sup>
+<img src="https://images.unsplash.com/photo-1543429150-3ef9400a8f1b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjE0OTYxOH0/&fm=jpg&crop=faces&fit=crop&h=540&w=1920"/><sup>Photo by [infinitexplorer](https://unsplash.com/photos/9CUH_hHZeps) on [Unsplash](https://unsplash.com). Last updated: [07/11/2020](https://github.com/baradghimire/baradghimire/blob/main/.github/workflows/autoUpdateREADME.yml)</sup>
 
 # G'day, nerds 👋🏽
 
