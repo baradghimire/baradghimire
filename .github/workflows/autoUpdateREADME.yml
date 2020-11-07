@@ -8,11 +8,19 @@ jobs:
     runs-on: ubuntu-latest
     env:
       GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      UNSPLASH_TOKEN: ${{ secrets.UNSPLASH_TOKEN }}
+      TKN: ${{ secrets.UNSPLASH_TOKEN }}
     steps:
       - uses: actions/checkout@v2
-      - name: Run Update README.md script
-        run: ./updateREADME.sh $UNSPLASH_TOKEN
+      - name: Update README.md
+        run: |
+          RES=`curl -s -X GET https://api.unsplash.com/photos/random/?query=nature -H "Authorization: Client-ID $TKN"`
+          URL=`echo "$RES" | jq -r '.urls.raw'`
+          USR=`echo "$RES" | jq -r '.user.username'`
+          LNK=`echo "$RES" | jq -r '.links.html'`
+          TDY=`date +'%d/%m/%Y'`
+          TAG='<img src=\"'$URL'/&fm=jpg&crop=faces&fit=crop&h=540&w=1920\"/><sup>Photo by ['$USR']('$LNK') on [Unsplash](https://unsplash.com). Last updated: ['$TDY'](https://github.com/baradghimire/baradghimire/blob/main/.github/workflows/autoUpdateREADME.yml)</sup>'
+          HDR=$(sed 's|&|\\&|g' <<< $TAG)
+          sed -i "1s~.*~$HDR~" README.md
       - name: Git add, commit, push
         run: |
           git config --global user.name "baradghimire"
