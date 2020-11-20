@@ -1,4 +1,4 @@
-<img src="https://images.unsplash.com/photo-1598044660612-9aed60c6f897?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjE0OTYxOH0/&fm=jpg&crop=faces&fit=crop&h=540&w=1920"/>⭐️ Star this repo to update cover image. Last updated by baradghimire on 20/11/2020
+<img src="https://images.unsplash.com/photo-1590091014590-70dfccb5295e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjE0OTYxOH0/&fm=jpg&crop=faces&fit=crop&h=540&w=1920"/>⭐️ [Star](https://github.com/baradghimire/baradghimire) this repo to update header image. Last starred by [baradghimire](https://github.com/baradghimire) on [20/11/2020](https://github.com/baradghimire/baradghimire/actions)
 
 # G'day, nerds 👋🏽
 
