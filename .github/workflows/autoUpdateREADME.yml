@@ -1,34 +1,31 @@
 name: Auto Update README.md
 
 on:
-    schedule:
-        - cron: "0 0 * * 0"
     watch:
         types: [started]
-    workflow_dispatch:
 
 jobs:
     build:
         runs-on: ubuntu-latest
         env:
+            GITHUB_ACTOR: ${{ github.actor }}
             GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-            TKN: ${{ secrets.UNSPLASH_TOKEN }}
-        steps:
-            - uses: actions/checkout@v2
-            - name: Update README.md
-              run: |
-                  RES=`curl -s -X GET https://api.unsplash.com/photos/random/?query=nature -H "Authorization: Client-ID $TKN"`
-                  URL=`echo "$RES" | jq -r '.urls.raw'`
-                  USR=`echo "$RES" | jq -r '.user.username'`
-                  LNK=`echo "$RES" | jq -r '.links.html'`
-                  TDY=`date +'%d/%m/%Y'`
-                  TAG='<img src=\"'$URL'/&fm=jpg&crop=faces&fit=crop&h=540&w=1920\"/><sup>Photo by ['$USR']('$LNK') on [Unsplash](https://unsplash.com). Last updated: ['$TDY'](https://github.com/baradghimire/baradghimire/blob/main/.github/workflows/autoUpdateREADME.yml). (Hint: [⭐️ Star](https://github.com/baradghimire/baradghimire) this repo to force an update)</sup>'
-                  HDR=$(sed 's|&|\\&|g' <<< $TAG)
-                  sed -i "1s~.*~$HDR~" README.md
-            - name: Git add, commit, push
-              run: |
-                  git config --global user.name "baradghimire"
-                  git config --global user.email "baradghimire@gmail.com"
-                  git add README.md
-                  git commit -m "Auto update README.md `date +'%d/%m/%Y'`"
-                  git push
+            UNSPLASH_TOKEN: ${{ secrets.UNSPLASH_TOKEN }}
+            steps:
+                - uses: actions/checkout@v2
+                - name: Update README.md
+                  run: |
+                      RESPONSE=`curl -s -X GET https://api.unsplash.com/photos/random/?query=nature -H "Authorization: Client-ID $UNSPLASH_TOKEN"`
+                      URL=`echo "$RESPONSE" | jq -r '.urls.raw'`
+                      ACTOR=$GITHUB_ACTOR
+                      TODAY=`date +'%d/%m/%Y'`
+                      TAG='<img src=\"'$URL'/&fm=jpg&crop=faces&fit=crop&h=540&w=1920\"/>⭐️ Star this repo to update cover image. Last updated by '$ACTOR' on '$TODAY
+                      FINAL=$(sed 's|&|\\&|g' <<< $TAG)
+                      sed -i "1s~.*~$FINAL~" README.md
+                - name: Git add, commit, push
+                  run: |
+                      git config --global user.name "baradghimire"
+                      git config --global user.email "baradghimire@gmail.com"
+                      git add README.md
+                      git commit -m "Auto update README.md `date +'%d/%m/%Y'`"
+                      git push
