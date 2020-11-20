@@ -1,4 +1,4 @@
-<img src="https://images.unsplash.com/photo-1579765338207-e216a8c78931?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjE0OTYxOH0/&fm=jpg&crop=faces&fit=crop&h=540&w=1920"/><sup>Photo by [iamnithin](https://unsplash.com/photos/pMT5N7XHF1g) on [Unsplash](https://unsplash.com). Last updated: [20/11/2020](https://github.com/baradghimire/baradghimire/blob/main/.github/workflows/autoUpdateREADME.yml). (Hint: [⭐️ Star](https://github.com/baradghimire/baradghimire) this repo to force an update)</sup>
+<img src="https://images.unsplash.com/photo-1598044660612-9aed60c6f897?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjE0OTYxOH0/&fm=jpg&crop=faces&fit=crop&h=540&w=1920"/>⭐️ Star this repo to update cover image. Last updated by baradghimire on 20/11/2020
 
 # G'day, nerds 👋🏽
 
