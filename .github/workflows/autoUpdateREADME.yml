@@ -17,7 +17,7 @@ jobs:
               run: |
                   RESPONSE=`curl -s -X GET https://api.unsplash.com/photos/random/?query=nature -H "Authorization: Client-ID $UNSPLASH_TOKEN"`
                   URL=`echo "$RESPONSE" | jq -r '.urls.raw'`
-                  ACTOR=`$GITHUB_ACTOR`
+                  ACTOR=$GITHUB_ACTOR
                   TODAY=`date +'%d/%m/%Y'`
                   TAG='<img src=\"'$URL'/&fm=jpg&crop=faces&fit=crop&h=540&w=1920\"/>⭐️ Star this repo to update cover image. Last updated by '$ACTOR' on '$TODAY
                   FINAL=$(sed 's|&|\\&|g' <<< $TAG)
