@@ -5,7 +5,7 @@ on:
         types: [started]
 
 jobs:
-    build:
+    update:
         runs-on: ubuntu-latest
         env:
             GITHUB_ACTOR: ${{ github.actor }}
@@ -19,13 +19,11 @@ jobs:
                   URL=`echo "$RESPONSE" | jq -r '.urls.raw'`
                   ACTOR=$GITHUB_ACTOR
                   TODAY=`date +'%d/%m/%Y'`
-                  TAG='<img src=\"'$URL'/&fm=jpg&crop=faces&fit=crop&h=540&w=1920\"/>⭐️ [Star](https://github.com/baradghimire/baradghimire) this repo to update header image. Last starred by ['$ACTOR'](https://github.com/'$ACTOR') on ['$TODAY'](https://github.com/baradghimire/baradghimire/actions)'
+                  TAG='<img src=\"'$URL'/&fm=jpg&crop=faces&fit=crop&h=540&w=1920\"/>⭐️ [Star](https://github.com/baradghimire/baradghimire) this repo to update the header image. Last starred by ['$ACTOR'](https://github.com/'$ACTOR') on ['$TODAY'](https://github.com/baradghimire/baradghimire/actions)'
                   FINAL=$(sed 's|&|\\&|g' <<< $TAG)
                   sed -i "1s~.*~$FINAL~" README.md
             - name: Git add, commit, push
               run: |
-                  git config --global user.name "baradghimire"
-                  git config --global user.email "baradghimire@gmail.com"
                   git add README.md
-                  git commit -m "Auto update README.md `date +'%d/%m/%Y'`"
+                  git commit -m "Thank you for the star, $ACTOR"
                   git push
