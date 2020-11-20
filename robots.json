@@ -1,31 +1,31 @@
 {
-  "name": "Barad Ghimire",
-  "location": [
-    { "current": "Melbourne, Australia" },
-    { "previous": "Kathmandu, Nepal" }
-  ],
-  "contact": {
-    "website": "https://barad.tech",
-    "email": "mailto:baradghimire@gmail.com",
-    "twitter": "https://www.twitter.com/barad",
-    "github": "https://www.github.com/baradghimire",
-    "linkedin": "https://www.linkedin.com/in/baradghimire",
-    "instagram": "https://www.instagram.com/baradghimire"
-  },
-  "work": {
-    "company": "Outcome.Life",
-    "title": "Junior Developer",
-    "links": {
-      "website": "https://outcome.life",
-      "github": [
-        "https://github.com/OutcomeLife",
-        "https://github.com/genny-project"
-      ]
+    "name": "Barad Ghimire",
+    "location": [
+        { "current": "Melbourne, Australia" },
+        { "previous": "Kathmandu, Nepal" }
+    ],
+    "contact": {
+        "website": "https://bg.id.au",
+        "email": "mailto:baradghimire@gmail.com",
+        "twitter": "https://twitter.com/barad",
+        "github": "https://github.com/baradghimire",
+        "linkedin": "https://linkedin.com/in/baradghimire",
+        "instagram": "https://instagram.com/baradghimire"
+    },
+    "work": {
+        "company": "Outcome.Life",
+        "title": "Junior Developer",
+        "links": {
+            "website": "https://outcome.life",
+            "github": [
+                "https://github.com/OutcomeLife",
+                "https://github.com/genny-project"
+            ]
+        }
+    },
+    "education": {
+        "school": "Deakin University",
+        "degree": "Bachelor of Cyber Security",
+        "website": "https://deakin.edu.au"
     }
-  },
-  "education": {
-    "school": "Deakin University",
-    "degree": "Bachelor of Cyber Security",
-    "website": "https://www.deakin.edu.au"
-  }
 }
