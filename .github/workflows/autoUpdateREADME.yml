@@ -24,8 +24,9 @@ jobs:
                   sed -i "1s~.*~$FINAL~" README.md
             - name: Git add, commit, push
               run: |
+                  ACTOR=$GITHUB_ACTOR
                   git config --global user.name "baradghimire"
                   git config --global user.email "baradghimire@gmail.com"
                   git add README.md
-                  git commit -m "Thank you for the star, $ACTOR"
+                  git commit -m "Thank you for the star, $ACTOR :)"
                   git push
