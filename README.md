@@ -6,7 +6,7 @@ I'm [Barad](https://twitter.com/barad), a junior developer at [Outcome.Life](htt
 I'm also studying Bachelor of Cyber Security at [Deakin University](https://github.com/Deakin).<br>
 I live in Melbourne, but I'm originally from Kathmandu. 🏔⤵️🦘<br>
 
-[🔗 bg.id.au](https://bg.id.au)<br>
+[✍🏽 Blog](https://bg.id.au)<br>
 [✉️ Email](mailto:baradghimire@gmail.com)<br>
 [🐦 Twitter](https://twitter.com/barad)<br>
 [💻 GitHub](https://github.com/baradghimire)<br>
@@ -16,5 +16,5 @@ I live in Melbourne, but I'm originally from Kathmandu. 🏔⤵️🦘<br>
 ### ... and g'day, robots 🤖
 
 ```sh
-$ curl -L robots.barad.tech
+$ curl -L robots.bg.id.au
 ```
