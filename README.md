@@ -1,4 +1,4 @@
-<img src="https://images.unsplash.com/photo-1421789665209-c9b2a435e3dc?ixid=MnwxNDk2MTh8MHwxfHJhbmRvbXx8fHx8fHx8fDE2MjI2NTY4ODI&ixlib=rb-1.2.1/&fm=jpg&crop=faces&fit=crop&h=540&w=1920"/>⭐️ [Star](https://github.com/baradghimire/baradghimire) this repo to update the header image. Last starred by [simonschaufi](https://github.com/simonschaufi) on [02/06/2021](https://github.com/baradghimire/baradghimire/actions)
+<img src="https://images.unsplash.com/photo-1473448912268-2022ce9509d8?ixid=MnwxNDk2MTh8MHwxfHJhbmRvbXx8fHx8fHx8fDE2MjYwNjAxNDU&ixlib=rb-1.2.1/&fm=jpg&crop=faces&fit=crop&h=540&w=1920"/>⭐️ [Star](https://github.com/baradghimire/baradghimire) this repo to update the header image. Last starred by [baradghimire](https://github.com/baradghimire) on [12/07/2021](https://github.com/baradghimire/baradghimire/actions)
 
 # G'day, nerds 👋🏽
 
