@@ -2,9 +2,8 @@
 
 # G'day, nerds 👋🏽
 
-I'm [Barad](https://twitter.com/barad), a frontend developer at [Outcome.Life](https://github.com/OutcomeLife) working on [Project Genny](https://github.com/genny-project).<br>
-I'm also studying Bachelor of Cyber Security at [Deakin University](https://github.com/Deakin).<br>
-I live in Melbourne, but I'm originally from Kathmandu. 🏔⤵️🦘<br>
+I'm Barad Ghimire, a Software Developer at [Cydarm Technologies](https://github.com/cydarm) working on [cydarm.com](https://www.cydarm.com/), a secure case management platform for cybersecurity operations.<br>
+I live in Naarm (Melbourne, Australia), but I'm originally from Kathmandu, Nepal. 🏔 ⤵ 🦘<br>
 
 [🔗 bg.id.au](https://bg.id.au)<br>
 [✉️ Email](mailto:hi@bg.id.au)<br>
